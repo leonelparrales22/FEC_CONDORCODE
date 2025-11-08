@@ -1,0 +1,36 @@
+{
+  "name": "fec_condorcode",
+  "version": "0.1.0",
+  "description": "Facturación Electrónica SRI Ecuador - Electron + React + Node.js",
+  "main": "apps/main/main.js",
+  "scripts": {
+    "dev": "concurrently \"npm:dev:main\" \"npm:dev:renderer\"",
+    "dev:main": "electron apps/main/main.js",
+    "dev:renderer": "cd apps/renderer && npm start",
+    "build": "npm run build:renderer && electron-builder",
+    "build:renderer": "cd apps/renderer && npm run build",
+    "test": "jest",
+    "test:e2e": "playwright test"
+  },
+  "author": "leonelparrales22",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^28.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.2.2",
+    "tailwindcss": "^3.3.3",
+    "better-sqlite3": "^8.4.0",
+    "keytar": "^8.0.0",
+    "node-soap": "^0.45.0",
+    "xml-crypto": "^2.1.0",
+    "puppeteer": "^21.3.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "playwright": "^1.41.2",
+    "concurrently": "^8.2.2",
+    "electron-builder": "^24.6.0"
+  }
+}

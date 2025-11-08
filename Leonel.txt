@@ -1,0 +1,2 @@
+¿Te gustaría agregar algún filtro avanzado (por estado, total, etc.), paginación, o alguna otra funcionalidad administrativa en el historial?
+
