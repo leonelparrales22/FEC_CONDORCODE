@@ -10,7 +10,7 @@
  */
 function firmarXMLMock(xml, certPath, certPass) {
   // Mock: agrega etiqueta <firmado/>
-  return xml + '\n<!-- firmado digitalmente (mock) -->';
+  return xml + "\n<!-- firmado digitalmente (mock) -->";
 }
 
 module.exports = { firmarXMLMock };

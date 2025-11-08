@@ -1,5 +1,5 @@
 // Módulo para enviar email con adjuntos (PDF/XML)
-const nodemailer = require('nodemailer');
+const nodemailer = require("nodemailer");
 
 /**
  * Envía un correo con PDF y XML adjuntos
@@ -24,8 +24,8 @@ async function enviarEmail({ host, port, user, pass }, to, subject, html, pdf, x
     subject,
     html,
     attachments: [
-      { filename: 'factura.pdf', content: pdf },
-      { filename: 'factura.xml', content: xml },
+      { filename: "factura.pdf", content: pdf },
+      { filename: "factura.xml", content: xml },
     ],
   });
   return info;

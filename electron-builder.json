@@ -4,12 +4,7 @@
   "directories": {
     "output": "dist"
   },
-  "files": [
-    "apps/main/**/*",
-    "apps/renderer/**/*",
-    "src/**/*",
-    "public/**/*"
-  ],
+  "files": ["apps/main/**/*", "apps/renderer/**/*", "src/**/*", "public/**/*"],
   "win": {
     "target": ["nsis", "msi"]
   },

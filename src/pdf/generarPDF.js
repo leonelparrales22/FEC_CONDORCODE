@@ -1,5 +1,5 @@
 // Módulo para generar PDF de factura usando Puppeteer
-const puppeteer = require('puppeteer');
+const puppeteer = require("puppeteer");
 
 /**
  * Genera un PDF de la factura
@@ -29,7 +29,7 @@ async function generarPDF(factura) {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
   await page.setContent(html);
-  const pdf = await page.pdf({ format: 'A4' });
+  const pdf = await page.pdf({ format: "A4" });
   await browser.close();
   return pdf;
 }

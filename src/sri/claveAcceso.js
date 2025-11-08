@@ -30,8 +30,8 @@ function modulo11(texto) {
     peso = peso === 7 ? 2 : peso + 1;
   }
   const mod = 11 - (total % 11);
-  if (mod === 11) return '0';
-  if (mod === 10) return '1';
+  if (mod === 11) return "0";
+  if (mod === 10) return "1";
   return String(mod);
 }
 
